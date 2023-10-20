@@ -1,0 +1,24 @@
+.logo-display {
+  display: flex;
+  max-width: 30rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-display p {
+  margin-top: -1rem;
+  font-size: 12px;
+}
+
+.logo {
+  margin: 1rem;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+}
+
+.logo:hover {
+  background-color: beige;
+}

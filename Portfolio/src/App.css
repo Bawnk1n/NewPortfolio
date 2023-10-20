@@ -1,0 +1,354 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  text-align: center;
+  box-sizing: border-box;
+  letter-spacing: 1.1px;
+  color: beige;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  letter-spacing: 2px;
+}
+
+.mybtn {
+  padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3rem;
+  max-height: 3.5rem;
+  background-color: #3c2a21;
+  border-bottom: 1px solid black;
+  z-index: 1;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#navbar.hide {
+  max-height: 0;
+}
+#navbar-btns {
+  display: flex;
+}
+#navbar-btns p {
+  margin: 1rem;
+  color: #e5e5cb;
+  letter-spacing: 3px;
+}
+#navbar-btns p:hover {
+  text-decoration: underline;
+  color: #e5e5cb;
+}
+
+#nonsense-p {
+  font-size: 16.5px;
+  position: fixed;
+}
+
+body {
+  background-color: #1a120b;
+  opacity: 0.9;
+  /* margin: 0 80px 0 80px; */
+  background: linear-gradient(135deg, #1a120b, #3c2a21);
+}
+
+.container {
+  display: flex;
+  padding: 2rem;
+  margin: 3rem;
+
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #3c2a21; */
+  /* border-radius: 10px; */
+}
+
+#about-p {
+  margin-left: 3rem;
+}
+
+.innerContainer {
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+  justify-content: center;
+  align-items: top;
+  /* background-color: #3c2a21; */
+}
+
+#main-about {
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 2rem;
+  text-align: left;
+  white-space: normal;
+  line-height: 2rem;
+}
+
+#main-about p {
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+  line-height: 0;
+}
+
+.badLetter {
+  letter-spacing: 7px;
+  transition: opacity 2s ease-in-out;
+}
+.goodLetter {
+  letter-spacing: 7px;
+  transition: opacity 1.5s ease-in-out;
+}
+#about {
+  display: none;
+  color: gold;
+  letter-spacing: 1.2px;
+  font-size: 30px;
+  font-weight: bold;
+
+  transition: opacity 2s ease-in-out;
+  opacity: 0;
+  text-shadow: 2px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+#enter-button {
+  transition: opacity 2s ease-in-out;
+  padding: 1rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  letter-spacing: 2px;
+  border-radius: 15px;
+  display: none;
+  opacity: 0;
+  background-color: #1a120b;
+}
+
+.scrollBtn {
+  padding: 1rem;
+  background-color: #1a120b;
+  border-radius: 15px;
+  margin-top: 3rem;
+}
+
+#knowledge-base {
+  /* background-color: #3c2a21; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* justify-content: start; */
+  margin: 0;
+  padding-bottom: 0;
+  height: 100vh;
+  /* border-bottom: 1px solid beige; */
+  border-top: 1px solid beige;
+}
+
+#diploma-gallery {
+  flex-direction: column;
+  margin: 0;
+  border-bottom: 1px solid beige;
+  height: 100vh;
+  justify-content: space-around;
+  border-top: 1px solid beige;
+}
+#diploma-gallery h3 {
+  margin-bottom: 1rem;
+}
+#diploma-gallery img {
+  border-radius: 10px;
+}
+
+.diplomaCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  padding: 1rem;
+  min-width: 14rem;
+  max-width: 15rem;
+  min-height: 10rem;
+}
+.diplomaCard:hover {
+  transform: scale(1.05);
+  /* background-color: #3c2a21; */
+  background-color: rgba(60, 42, 33, 0.5); /* 50% opacity */
+  border-radius: 20px;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+#project-buttons {
+  margin: 0;
+}
+
+.project-img-header {
+  letter-spacing: 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 200;
+}
+.project-button-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-header {
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* PHOTO GALLERY SECTION */
+
+#project-gallery {
+  margin-top: 2rem;
+}
+
+#photo-gallery {
+  margin-top: 2rem;
+}
+
+#project-gallery h2 {
+  margin-bottom: 2rem;
+}
+
+#project-photos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imagePlaceholderFar {
+  width: 70px;
+  height: 40px;
+  background-color: #e5e5cb;
+  opacity: 0;
+}
+.imagePlaceholderMed {
+  width: 100px;
+  height: 60px;
+  background-color: #e5e5cb;
+  opacity: 0;
+}
+.imagePlaceholder {
+  width: 300px;
+  height: 300px;
+  background-color: #e5e5cb;
+}
+
+#left-far-img img {
+  width: 70px;
+  height: 40px;
+  filter: blur(1.5px);
+}
+#left-med-img img {
+  width: 100px;
+  height: 60px;
+  filter: blur(0.8px);
+}
+#main-img img {
+  width: 700px;
+  height: 300px;
+  box-shadow: 1px 0 5px 0 black;
+}
+#right-med-img img {
+  width: 100px;
+  height: 60px;
+  filter: blur(0.8px);
+}
+#right-far-img img {
+  width: 70px;
+  height: 40px;
+  filter: blur(1.5px);
+}
+
+#main-photo-background {
+  background-color: rgba(213, 206, 163, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+figure {
+  margin: 1rem;
+  padding: 0;
+}
+
+#project-description {
+  margin: 2rem;
+  line-height: 1.5rem;
+  border-top: 1px solid beige;
+  padding-top: 1rem;
+}
+
+/* CONTACT FORM */
+
+#contact-form-div {
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  min-width: 80%;
+  min-height: 10rem;
+  background-color: #1a120b;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-and-email {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+  width: 100%;
+}
+
+#contact-form input {
+  color: black;
+  padding: 0.3rem;
+  border-radius: 10px;
+}
+#contact-form textarea {
+  color: black;
+  min-width: 30rem;
+  min-height: 5rem;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+#contact-form input[type="submit"] {
+  padding: 0.3rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+}
