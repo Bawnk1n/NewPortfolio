@@ -5,6 +5,7 @@ import CaretRight from "../public/images/icons/caret-right-fill.svg";
 import emailjs from "emailjs-com";
 
 import harvardCS50w from "/images/diplomas/cs50web.webp";
+import logoBootstrap from "../public/images/logos/bootstrap.svg";
 
 const projects = ["homesteader", "ponderosa", "network", "auctions", "mail"];
 
