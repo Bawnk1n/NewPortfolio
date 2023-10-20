@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import "./App.css";
 import { KnowledgeCard } from "./components/knowledgeCard";
-import CaretRight from "../src/assets/images/icons/caret-right-fill.svg";
+import CaretRight from "../public/images/icons/caret-right-fill.svg";
 import emailjs from "emailjs-com";
 
 const projects = ["homesteader", "ponderosa", "network", "auctions", "mail"];
@@ -198,7 +198,7 @@ function App() {
       for (let i = 1; imageExists; i++) {
         try {
           const imgModule = await import(
-            `../src/assets/images/projects/${displayProject}/${i}.png`
+            `../public/images/projects/${displayProject}/${i}.png`
           );
           load.push(imgModule.default);
         } catch (error) {
@@ -265,11 +265,6 @@ function App() {
           </div>
         </div>
         <div id="main-about" className="">
-          {/* <img
-            src="../src/assets/images/volcano-boarding5.jpg"
-            alt="Profile Image"
-            id="profile-img"
-          /> */}
           {displayArray}
           <p id="about">My name is Garyk Simpson and I am a web developer.</p>
           <button
@@ -311,7 +306,7 @@ function App() {
             <div className="diplomaCard">
               <h3>Harvard CS50x</h3>
               <img
-                src="./assets/images/diplomas/cs50x.png"
+                src="../public/images/diplomas/cs50x.png"
                 width="200px"
                 height="120px"
               />
@@ -319,7 +314,7 @@ function App() {
             <div className="diplomaCard">
               <h3>Codecademy Front End Developer</h3>
               <img
-                src="../src/assets/images/diplomas/codecademy.webp"
+                src="../public/images/diplomas/codecademy.webp"
                 width="200px"
                 height="120px"
               />
@@ -327,7 +322,7 @@ function App() {
             <div className="diplomaCard">
               <h3>Harvard CS50w</h3>
               <img
-                src="../src/assets/images/diplomas/cs50web.webp"
+                src="../public/images/diplomas/cs50web.webp"
                 width="200px"
                 height="120px"
               />
@@ -349,12 +344,12 @@ function App() {
                 >
                   <h2 className="project-img-header">{project}</h2>
                   <img
-                    src={`../src/assets/images/projects/${project}/1.png`}
+                    src={`../public/images/projects/${project}/1.png`}
                     alt="Project-Profile"
                     width="200px"
                   />
                   {displayProject === project && (
-                    <img src="../src/assets/images/icons/caret-up-fill.svg" />
+                    <img src="../public/images/icons/caret-up-fill.svg" />
                   )}
                 </div>
               );
@@ -389,7 +384,7 @@ function App() {
                   }}
                   style={{ opacity: leftMedImg ? null : "0.5" }}
                 >
-                  <img src="../src/assets/images/icons/caret-left-fill.svg" />
+                  <img src="../public/images/icons/caret-left-fill.svg" />
                 </button>
                 <figure id="main-img">
                   {mainImg ? (
