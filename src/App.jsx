@@ -5,7 +5,7 @@ import CaretRight from "../public/images/icons/caret-right-fill.svg";
 import emailjs from "emailjs-com";
 
 import harvardCS50w from "/images/diplomas/cs50web.webp";
-import logoBootstrap from "../public/images/logos/bootstrap.svg";
+import logoBootstrap from "/images/logos/bootstrap.svg";
 
 const projects = ["homesteader", "ponderosa", "network", "auctions", "mail"];
 
@@ -343,12 +343,12 @@ function App() {
                 >
                   <h2 className="project-img-header">{project}</h2>
                   <img
-                    src={`../public/images/projects/${project}/1.png`}
+                    src={`/images/projects/${project}/1.png`}
                     alt="Project-Profile"
                     width="200px"
                   />
                   {displayProject === project && (
-                    <img src="../public/images/icons/caret-up-fill.svg" />
+                    <img src="/images/icons/caret-up-fill.svg" />
                   )}
                 </div>
               );
