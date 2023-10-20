@@ -8,7 +8,7 @@ export function LogoDisplay(props) {
             return (
               <div key={image}>
                 <img
-                  src={`../src/assets/images/logos/${image}.svg`}
+                  src={`../public/images/logos/${image}.svg`}
                   className="logo"
                 />
                 <p>{image}</p>
