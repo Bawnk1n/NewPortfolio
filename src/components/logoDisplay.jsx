@@ -9,10 +9,7 @@ export function LogoDisplay(props) {
         ? props.images.map((image) => {
             return (
               <div key={image}>
-                <img
-                  src={`../public/images/logos/${image}.svg`}
-                  className="logo"
-                />
+                <img src={`/images/logos/${image}.svg`} className="logo" />
                 <p>{image}</p>
               </div>
             );
