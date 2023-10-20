@@ -1,5 +1,7 @@
 import "../assets/logoDisplay.css";
 
+import logoBootstrap from "../public/images/logos/bootstrap.svg";
+
 export function LogoDisplay(props) {
   return (
     <div className="logo-display">
