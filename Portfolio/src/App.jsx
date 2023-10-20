@@ -311,7 +311,7 @@ function App() {
             <div className="diplomaCard">
               <h3>Harvard CS50x</h3>
               <img
-                src="../src/assets/images/diplomas/cs50x.png"
+                src="./assets/images/diplomas/cs50x.png"
                 width="200px"
                 height="120px"
               />
