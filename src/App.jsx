@@ -383,7 +383,7 @@ function App() {
                   }}
                   style={{ opacity: leftMedImg ? null : "0.5" }}
                 >
-                  <img src="../public/images/icons/caret-left-fill.svg" />
+                  <img src="/images/icons/caret-left-fill.svg" />
                 </button>
                 <figure id="main-img">
                   {mainImg ? (
