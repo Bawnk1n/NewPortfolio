@@ -4,6 +4,8 @@ import { KnowledgeCard } from "./components/knowledgeCard";
 import CaretRight from "../public/images/icons/caret-right-fill.svg";
 import emailjs from "emailjs-com";
 
+import harvardCS50w from "/images/diplomas/cs50web.webp";
+
 const projects = ["homesteader", "ponderosa", "network", "auctions", "mail"];
 
 const descriptions = {
@@ -321,11 +323,7 @@ function App() {
             </div>
             <div className="diplomaCard">
               <h3>Harvard CS50w</h3>
-              <img
-                src="/images/diplomas/cs50web.webp"
-                width="200px"
-                height="120px"
-              />
+              <img src={harvardCS50w} width="200px" height="120px" />
             </div>
           </div>
         </div>
