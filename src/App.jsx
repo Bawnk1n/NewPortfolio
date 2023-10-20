@@ -306,7 +306,7 @@ function App() {
             <div className="diplomaCard">
               <h3>Harvard CS50x</h3>
               <img
-                src="../public/images/diplomas/cs50x.png"
+                src="/images/diplomas/cs50x.png"
                 width="200px"
                 height="120px"
               />
@@ -314,7 +314,7 @@ function App() {
             <div className="diplomaCard">
               <h3>Codecademy Front End Developer</h3>
               <img
-                src="../public/images/diplomas/codecademy.webp"
+                src="/images/diplomas/codecademy.webp"
                 width="200px"
                 height="120px"
               />
@@ -322,7 +322,7 @@ function App() {
             <div className="diplomaCard">
               <h3>Harvard CS50w</h3>
               <img
-                src="../public/images/diplomas/cs50web.webp"
+                src="/images/diplomas/cs50web.webp"
                 width="200px"
                 height="120px"
               />
