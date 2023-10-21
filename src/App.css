@@ -224,6 +224,9 @@ h2 {
   margin: 0;
   flex-wrap: wrap;
 }
+#project-buttons img {
+  border-radius: 5px;
+}
 
 .project-img-header {
   letter-spacing: 5px;
