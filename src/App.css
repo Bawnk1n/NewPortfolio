@@ -390,3 +390,7 @@ figure {
   /* border-radius: 10px; */
   margin-top: 0.5rem;
 }
+
+.up {
+  margin-top: 0;
+}

@@ -317,7 +317,7 @@ function App() {
 
         <div id="diploma-gallery" className="container" ref={diplomasRef}>
           <h2>Diplomas</h2>
-          <div className="innerContainer">
+          <div className="innerContainer up">
             <div className="diplomaCard">
               <h3>Harvard CS50x</h3>
               <img
