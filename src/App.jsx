@@ -95,11 +95,11 @@ function App() {
 
   function sendEmail(e) {
     e.preventDefault();
-    const userName = e.target.elements.user_name.value;
+    // const userName = e.target.elements.user_name.value;
     const userEmail = e.target.elements.user_email.value;
 
-    if (!userName || !userEmail) {
-      alert("Both name and email are required.");
+    if (!userEmail) {
+      alert("Please enter your email");
       return;
     }
     emailjs.sendForm("service_bg33kyh", "template_jydwx8a", e.target).then(
