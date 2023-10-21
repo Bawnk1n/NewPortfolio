@@ -127,7 +127,7 @@ body {
 
 #enter-button {
   transition: opacity 2s ease-in-out;
-  padding: 1rem;
+  padding: 0.7rem;
   margin: 1rem;
   margin-top: 2rem;
   letter-spacing: 2px;
@@ -338,17 +338,18 @@ figure {
 #contact-form input {
   color: black;
   padding: 0.3rem;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 #contact-form textarea {
   color: black;
   min-width: 30rem;
   min-height: 5rem;
   padding: 0.5rem;
-  border-radius: 15px;
+  /* border-radius: 15px; */
+  text-align: center;
 }
 #contact-form input[type="submit"] {
   padding: 0.3rem;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin-top: 0.5rem;
 }

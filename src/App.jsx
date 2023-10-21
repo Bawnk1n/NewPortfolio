@@ -257,14 +257,14 @@ function App() {
         <div id="navbar" className={`${hideNavbar ? "hide" : null}`}>
           <div id="navbar-btns">
             <p onClick={() => scrollToSection(knowledgeBaseRef)}>
-              My Knowledge Base
+              Knowledge Base
             </p>
             <p>|</p>
-            <p onClick={() => scrollToSection(diplomasRef)}>My Diplomas</p>
+            <p onClick={() => scrollToSection(diplomasRef)}>Diplomas</p>
             <p>|</p>
-            <p onClick={() => scrollToSection(projectsRef)}>My Projects</p>
+            <p onClick={() => scrollToSection(projectsRef)}>Projects</p>
             <p>|</p>
-            <p onClick={() => scrollToSection(contactRef)}>Contact Me</p>
+            <p onClick={() => scrollToSection(contactRef)}>Contact</p>
           </div>
         </div>
         <div id="main-about" className="">
@@ -278,7 +278,7 @@ function App() {
           </button>
         </div>
         <div id="knowledge-base" className="container" ref={knowledgeBaseRef}>
-          <h2>My Knowledge Base</h2>
+          <h2>Knowledge Base</h2>
           <div className="innerContainer">
             <KnowledgeCard
               header="Languages"
@@ -304,7 +304,7 @@ function App() {
           </div>
         </div>
         <div id="diploma-gallery" className="container" ref={diplomasRef}>
-          <h2>My Diplomas</h2>
+          <h2>Diplomas</h2>
           <div className="innerContainer">
             <div className="diplomaCard">
               <h3>Harvard CS50x</h3>
@@ -341,12 +341,13 @@ function App() {
                     setCurrentMainImgIndex(0);
                   }}
                 >
-                  <h2 className="project-img-header">{project}</h2>
                   <img
                     src={`/images/projects/${project}/1.png`}
                     alt="Project-Profile"
                     width="200px"
                   />
+                  <h2 className="project-img-header">{project}</h2>
+
                   {displayProject === project && (
                     <img src="/images/icons/caret-up-fill.svg" />
                   )}
@@ -437,17 +438,24 @@ function App() {
             <form id="contact-form" onSubmit={sendEmail}>
               <h4>Contact Me</h4>
               <div className="name-and-email">
-                <div className="input">
+                {/* <div className="input">
                   <label>Name</label>
                   <input type="text" name="user_name"></input>
-                </div>
+                </div> */}
                 <div className="input">
-                  <label>Email</label>
-                  <input type="email" name="user_email"></input>
+                  {/* <label>Email</label> */}
+                  <input
+                    type="email"
+                    name="user_email"
+                    placeholder="Enter your email"
+                  ></input>
                 </div>
               </div>
-              <label>Message</label>
-              <textarea name="message"></textarea>
+              {/* <label>Message</label> */}
+              <textarea
+                name="message"
+                placeholder="Write your message"
+              ></textarea>
               <input type="submit" value="Send"></input>
             </form>
           </div>
