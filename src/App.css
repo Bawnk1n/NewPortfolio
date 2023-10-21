@@ -232,7 +232,7 @@ h2 {
 .project-header {
   letter-spacing: 5px;
   font-weight: bold;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 /* PHOTO GALLERY SECTION */

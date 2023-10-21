@@ -11,16 +11,11 @@ import logoBootstrap from "/images/logos/bootstrap.svg";
 const projects = ["homesteader", "ponderosa", "network", "auctions", "mail"];
 
 const descriptions = {
-  homesteader: `Homesteader is an app I am currently developing whose purpose is to help those that are interesting in creating
-   a garden by giving them valuable information and tips about the plants they wish to grow and also helping them organize their
-    prospective garden by sending their information to the OpenAI ChatGPT API, whose job it is to organize most efficiently the users garden. To create this app I am
-     using React, Django, HTML and CSS`,
-  ponderosa: `Ponderosa is an app I developed as a final project for Harvards online CS50 course. It is a language learning app that uses AI
-   to dynamically generate flash cards based on a user selected language and subject. Users are able to save generated decks and create folders to organize them, 
-   and drill them with 'Practice Mode', and 'Active Recall' mode. To create this app I used React, HTML and CSS`,
-  network: `Network is a project I did for the CS50W course, it uses HTML, CSS, Python, specifically the Django framework, using the built-in sqlite3 database to store user accounts, posts and keep track of likes and follows`,
-  auctions: `Auctions is another project I did for the CS50W course, It uses HTML, CSS, Python and SQLite3 and is meant to simulate a simple ecommerce store. It has user accounts functionalities, along with 'View All Listings', 'Create New Listing', 'View Categories', and 'Watchlist'.`,
-  mail: `Mail is a project I did that is meant to explore the basics of a email system. It uses Javascript, Python, CSS and HTML, and has user accounts, user inbox, 'Compose Email' 'Sent' inbox, and 'Archive' functionalities.`,
+  homesteader: `Homesteader is an in-development application designed to assist gardening enthusiasts with valuable insights and personalized tips on various plants. The app features an intelligent garden organization system, leveraging the OpenAI ChatGPT API to optimize garden layouts. The tech stack includes React for frontend development, Django for backend logic, along with HTML and CSS for styling.`,
+  ponderosa: `Developed as a capstone project for Harvard's CS50 course, Ponderosa is a sophisticated language-learning application that utilizes AI algorithms to dynamically generate flashcards. It offers features like customizable decks, folder organization, 'Practice Mode', and 'Active Recall' functionalities to enhance the learning experience. The application is built using React, HTML, and CSS.`,
+  network: `Network is a social media application mimicking core features of platforms like Twitter. Developed using Django and SQLite3 for backend functionalities, the app supports user account management, post creation, user following, and post liking capabilities.`,
+  auctions: `Created for the CS50W course, Auctions is a simplified e-commerce platform. Implemented using HTML, CSS, Python, and SQLite3, the platform offers essential e-commerce features including user account management, comprehensive product listings, category views, and a personalized watchlist.`,
+  mail: `Mail is an exploratory project aimed at replicating basic functionalities of an email system. Developed using JavaScript, Python, HTML, and CSS, the application features a user-friendly interface supporting account management, inbox navigation, email composition, sent items, and an archiving system.`,
 };
 
 const letters = `abdegiklmnoprsvwy`;
