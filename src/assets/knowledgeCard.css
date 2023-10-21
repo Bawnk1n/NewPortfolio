@@ -1,10 +1,11 @@
 .knowledgeCard {
   margin: 1rem;
+  margin-top: 0rem;
   text-align: center;
   transition: transform 0.3s ease-in-out;
   padding: 1rem;
   max-width: 15rem;
-  min-height: 10rem;
+  min-height: 20rem;
 }
 
 .knowledgeCard:hover {

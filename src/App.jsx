@@ -386,13 +386,15 @@ function App() {
                 >
                   <img src="/images/icons/caret-left-fill.svg" />
                 </button>
-                <figure id="main-img">
-                  {mainImg ? (
-                    <img src={`..${mainImg}`} width="200px" />
-                  ) : (
-                    <div className="imagePlaceholder"></div>
-                  )}
-                </figure>
+
+                {mainImg ? (
+                  <div id="main-img-div">
+                    <img src={`..${mainImg}`} id="main-img" />
+                  </div>
+                ) : (
+                  <div className="imagePlaceholder"></div>
+                )}
+
                 <button
                   className="mybtn"
                   onClick={() => {
