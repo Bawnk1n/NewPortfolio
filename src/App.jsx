@@ -181,13 +181,16 @@ function App() {
       });
       setTimeout(() => {
         const about = document.getElementById("about");
-        about.style.display = "block";
-        about.style.opacity = "1";
+
         const div = document.getElementById("main-about");
         div.style.display = "flex";
         div.style.justifyContent = "center";
         div.style.alignItems = "center";
         div.style.flexDirection = "column";
+        div.style.flexWrap = "wrap";
+        about.style.display = "inline-block";
+        about.style.opacity = "1";
+        about.style.lineHeight = "2rem";
         const allLetters = document.querySelectorAll(".goodLetter, .badLetter");
         allLetters.forEach((letter) => (letter.style.display = "none"));
         const button = document.getElementById("enter-button");
