@@ -279,7 +279,7 @@ function App() {
         </div>
         <div id="knowledge-base" className="container" ref={knowledgeBaseRef}>
           <h2>Knowledge Base</h2>
-          <div className="innerContainer">
+          <div className="innerContainer up">
             <KnowledgeCard
               header="Languages"
               images={["javascript", "html-5", "css-3", "python"]}

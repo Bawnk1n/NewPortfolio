@@ -189,7 +189,7 @@ body {
   transform: scale(1.05);
   /* background-color: #3c2a21; */
   background-color: rgba(60, 42, 33, 0.5); /* 50% opacity */
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 h2 {
@@ -308,16 +308,20 @@ figure {
 #contact-form-div {
   padding: 3rem;
   margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact-form {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  min-width: 80%;
+  min-width: 70%;
+  /* max-width: 60%; */
   min-height: 10rem;
   background-color: #1a120b;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   justify-content: center;
   align-items: center;
 }
