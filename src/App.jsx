@@ -3,6 +3,7 @@ import "./App.css";
 import { KnowledgeCard } from "./components/knowledgeCard";
 import CaretRight from "../public/images/icons/caret-right-fill.svg";
 import emailjs from "emailjs-com";
+import { Modal } from "./components/modal";
 
 import harvardCS50w from "/images/diplomas/cs50web.webp";
 import logoBootstrap from "/images/logos/bootstrap.svg";
@@ -32,7 +33,6 @@ let aboutIndex = 0;
 function App() {
   const [displayProject, setDisplayProject] = useState("homesteader");
   const [loadedPhotos, setLoadedPhotos] = useState([]);
-  const [displayString, setDisplayString] = useState("");
 
   const [leftFarImg, setLeftFarImg] = useState();
   const [leftMedImg, setLeftMedImg] = useState();
@@ -41,11 +41,23 @@ function App() {
   const [rightFarImg, setRightFarImg] = useState();
   const [currentMainImgIndex, setCurrentMainImgIndex] = useState(0);
 
-  // const [index, setIndex] = useState(0);
-  // const [aboutIndex, setAboutIndex] = useState(0);
   const [displayArray, setDisplayArray] = useState([]);
   const [introP1Finished, setIntroP1Finished] = useState(false);
   const [introP2Finished, setIntroP2Finished] = useState(false);
+
+  const [modalImg, setModalImg] = useState();
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  function setModalImgFunc(imgSrc) {
+    console.log("yeet");
+    setModalImg(imgSrc);
+    setIsModalVisible(true);
+  }
+
+  function closeModal() {
+    setIsModalVisible(false);
+    setModalImg();
+  }
 
   const [hideNavbar, setHideNavbar] = useState(true);
   useEffect(() => {
@@ -254,6 +266,7 @@ function App() {
   return (
     <>
       <div id="body">
+        {isModalVisible && <Modal img={modalImg} closeModal={closeModal} />}
         <div id="navbar" className={`${hideNavbar ? "hide" : null}`}>
           <div id="navbar-btns">
             <p onClick={() => scrollToSection(knowledgeBaseRef)}>
@@ -303,6 +316,7 @@ function App() {
             />
           </div>
         </div>
+
         <div id="diploma-gallery" className="container" ref={diplomasRef}>
           <h2>Diplomas</h2>
           <div className="innerContainer">
@@ -310,21 +324,30 @@ function App() {
               <h3>Harvard CS50x</h3>
               <img
                 src="/images/diplomas/cs50x.png"
-                width="200px"
-                height="120px"
+                width="300px"
+                height="180px"
+                onClick={() => setModalImgFunc("/images/diplomas/cs50x.png")}
               />
             </div>
             <div className="diplomaCard">
               <h3>Codecademy Front End Developer</h3>
               <img
                 src="/images/diplomas/codecademy.webp"
-                width="200px"
-                height="120px"
+                width="300px"
+                height="180px"
+                onClick={() =>
+                  setModalImgFunc("/images/diplomas/codecademy.webp")
+                }
               />
             </div>
             <div className="diplomaCard">
               <h3>Harvard CS50w</h3>
-              <img src={harvardCS50w} width="200px" height="120px" />
+              <img
+                src={harvardCS50w}
+                width="300px"
+                height="180px"
+                onClick={() => setModalImgFunc(harvardCS50w)}
+              />
             </div>
           </div>
         </div>
@@ -389,7 +412,11 @@ function App() {
 
                 {mainImg ? (
                   <div id="main-img-div">
-                    <img src={`..${mainImg}`} id="main-img" />
+                    <img
+                      src={`..${mainImg}`}
+                      id="main-img"
+                      onClick={() => setModalImgFunc(`..${mainImg}`)}
+                    />
                   </div>
                 ) : (
                   <div className="imagePlaceholder"></div>

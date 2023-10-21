@@ -1,6 +1,6 @@
 .logo-display {
   display: flex;
-  max-width: 30rem;
+  max-width: 35rem;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -14,8 +14,8 @@
 .logo {
   margin: 1rem;
   border-radius: 10px;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   padding: 0.5rem;
 }
 
