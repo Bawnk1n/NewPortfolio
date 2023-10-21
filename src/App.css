@@ -101,6 +101,7 @@ body {
   margin: 1rem;
   justify-content: center;
   align-items: top;
+  flex-wrap: wrap;
   /* background-color: #3c2a21; */
 }
 
@@ -169,7 +170,7 @@ body {
   /* justify-content: start; */
   margin: 0;
   padding-bottom: 0;
-  height: 100vh;
+  min-height: 100vh;
   /* border-bottom: 1px solid beige; */
   border-top: 1px solid beige;
 }
@@ -178,7 +179,7 @@ body {
   flex-direction: column;
   margin: 0;
   border-bottom: 1px solid beige;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: start;
   border-top: 1px solid beige;
 }
@@ -214,7 +215,9 @@ h2 {
 }
 
 #project-buttons {
+  display: flex;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .project-img-header {
@@ -314,8 +317,8 @@ h2 {
   justify-content: center;
   padding: 1rem;
   border-radius: 20px;
-  min-width: 60%;
-  min-height: 20rem;
+  min-width: 80%;
+  min-height: 25rem;
 }
 
 figure {
