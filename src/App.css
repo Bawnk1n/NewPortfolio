@@ -254,6 +254,7 @@ h2 {
 
 #photo-gallery {
   margin-top: 2rem;
+  overflow: hidden;
 }
 
 #project-gallery h2 {
